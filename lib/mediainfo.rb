@@ -213,6 +213,8 @@ class Mediainfo
     mediainfo_attr_reader :overall_bit_rate
     mediainfo_attr_reader :writing_application
     mediainfo_attr_reader :writing_library
+    mediainfo_attr_reader :description
+    mediainfo_attr_reader :movie_name
 
     mediainfo_date_reader :mastered_date
     mediainfo_date_reader :tagged_date
