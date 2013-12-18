@@ -415,7 +415,7 @@ class Mediainfo
 
   def raw_response=(response)
     raise ArgumentError, "raw response is nil" if response.nil?
-    @raw_response = response
+    @raw_response = response.encode("UTF-16BE", :invalid=>:replace, :replace=>"?").encode("UTF-8")
     parse!
     @raw_response
   end
